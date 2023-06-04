@@ -19,7 +19,7 @@ async function createNote(message) {
     .sort((a , b) => (a.length - b.length) * -1)[0]
     .length
 
-    // Make sure text should be around 8 lines
+    // Make sure text should be around 10 lines
     while (Math.round(message.length / maxWordLength) > 10) {
         maxWordLength = maxWordLength + 0.5;
     }
@@ -27,11 +27,6 @@ async function createNote(message) {
 
   // 29.5 is good width for Signika font
   const size = maxWordLength * 29.5
-
-  if (canvas.scene.width / 2 < size) {
-    ui.notifications.error(`Sticky Note too large!`)
-    return
-  }
 
   // make the drawing
   const myDrawing = await canvas.scene.createEmbeddedDocuments("Drawing", [{
