@@ -1,0 +1,37 @@
+.blades-in-the-dark.sheet.actor:not(.pc):not(.crew):not(.faction) .actor-sheet input{
+  display: block;
+  margin-top: 1.625rem;
+}
+
+.blades-in-the-dark.sheet.actor:not(.pc):not(.crew):not(.faction) .actor-sheet label {
+  display: block;
+  position: relative;
+  bottom: 3rem;
+}
+
+span.tooltiptext {
+  font-family: 'Signika', sans-serif;
+  font-weight: normal;
+  transform: translate(-35%, 1.5rem);
+}
+
+.blades-in-the-dark.sheet.actor.faction .item.faction-items {
+  padding: 10px;
+}
+
+.blades-in-the-dark.sheet.actor.faction .item.faction-items .teeth-experience-faction {
+  background: black;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.blades-in-the-dark.sheet.actor.faction .item.faction-items .teeth-experience-faction div:last-child {
+  padding-top: 8px !important;
+}
+
+.blades-in-the-dark.sheet.actor.faction .item.faction-items .flex-horizontal .flex-horizontal {
+  align-items: center;
+  margin-right: 12px;
+}

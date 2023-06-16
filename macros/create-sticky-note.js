@@ -28,6 +28,9 @@ async function createNote(message) {
   // 29.5 is good width for Signika font
   const size = maxWordLength * 29.5
 
+  // todo: handle padding
+  // todo: handle positioning
+
   // make the drawing
   const myDrawing = await canvas.scene.createEmbeddedDocuments("Drawing", [{
     type: CONST.DRAWING_TYPES.RECTANGLE,
